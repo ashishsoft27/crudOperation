@@ -1,0 +1,25 @@
+<p>sign-up works!</p>
+<div class="container w-50">
+    <form [formGroup]="formData" (ngSubmit)="signup()">
+        <div>
+            <label for="id1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="id1" formControlName="name">
+        </div>
+        <div>
+            <label for="id2" class="form-label">Mobile no</label>
+            <input type="text" class="form-control" id="id2" formControlName="mobno">
+        </div>
+        <div class="mb-3">
+            <label for="id3" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="id3" formControlName="email">
+        </div>
+        <div>
+            <label for="id4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="id4" formControlName="pass">
+        </div>
+        <button type="submit" class="btn btn-primary">signUp</button>
+        <button type="button" class="btn btn-primary mt-2" routerLink="/login">login</button>
+
+    </form>
+</div>
+<router-outlet></router-outlet>

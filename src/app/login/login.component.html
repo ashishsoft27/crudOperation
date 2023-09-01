@@ -1,0 +1,19 @@
+<p>login works!</p>
+<div class="container w-50">
+    
+        <form [formGroup]="logindata" (ngSubmit)="login()">
+            <div class="mb-3">
+                <label for="id1" class="form-label" >Email address</label>
+                <input type="email" class="form-control" id="id1" formControlName="emailid">
+            </div>
+            <div class="mb-3">
+                <label for="id2" class="form-label" >Password</label>
+                <input type="password" class="form-control" id="id2" formControlName="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+
+            <button type="button" class="btn btn-primary" routerLink="/sign-up">signUp</button>
+        </form>
+    
+</div>
+<router-outlet></router-outlet>
